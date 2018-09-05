@@ -1,0 +1,10 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Diazwatson\DeliveryMessages\ViewModel\DeliveryMessages $viewModel */
+
+$viewModel = $block->getData('viewModel');
+?>
+
+<div class="delivery">
+	<span><?= $block->escapeHtml($viewModel->getDeliveryMessages()) ?></span>
+</div>
